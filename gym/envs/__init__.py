@@ -91,6 +91,13 @@ register(
     max_episode_steps=500,
 )
 
+register(
+    id='PhysicsSimEnv-v0',
+    entry_point='gym.envs.classic_control:PhysicsSimEnv',
+    reward_threshold=-100.0,
+    max_episode_steps=1000,
+)
+
 # Box2d
 # ----------------------------------------
 
