@@ -49,6 +49,13 @@ register(
 
 # Classic
 # ----------------------------------------
+register(
+    id='Physicssim-v0',
+    entry_point='gym.envs.classic_control:PhysicssimEnv',
+    max_episode_steps=10,
+    reward_threshold=200.0,
+)
+
 
 register(
     id='CartPole-v0',
